@@ -17,7 +17,8 @@ namespace ProjectSales.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Sales web application with C# ASP.Net MVC";
+            ViewData["Email"] = "brunoe@gmail.com";
 
             return View();
         }
