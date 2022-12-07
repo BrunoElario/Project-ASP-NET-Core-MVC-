@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using ProjectSales.Data;
+using ProjectSales.Services;
 
 namespace ProjectSales
 {
@@ -36,6 +37,7 @@ namespace ProjectSales
                     builder.MigrationsAssembly("ProjectSales")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
